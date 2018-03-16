@@ -1,0 +1,14 @@
+$ep-border-header: #F9F9F9;
+$ep-border-radius: 3px;
+$ep-padding-results: $ep-padding;
+$ep-background-header: #FCFCFC;
+
+mt-emoji-picker-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: $ep-border-size solid $ep-border-header;
+    border-radius: 0 0 $ep-border-radius $ep-border-radius;
+    padding: $ep-padding-results;
+    background: $ep-background-header;
+}

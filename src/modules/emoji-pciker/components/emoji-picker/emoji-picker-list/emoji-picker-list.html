@@ -1,0 +1,15 @@
+<div class="emoji-list">
+
+  <ng-container *ngFor="let emojiCategory of emojis | notEmptyEmojiCategory">
+
+    <mt-emoji-category [mtCategory]="emojiCategory"></mt-emoji-category>
+
+    <div class="emoji-buttons">
+      <mt-emoji-picker-button *ngFor="let emoji of emojiCategory.emojis"
+                              (mtSelection)="emojiSelectionEmitter.emit($event)"
+                              [mtEmoji]="emoji"></mt-emoji-picker-button>
+    </div>
+
+  </ng-container>
+
+</div>

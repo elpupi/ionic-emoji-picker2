@@ -1,0 +1,5 @@
+<ng-container *ngFor="let category of emojisCategories">
+  <mt-emoji-picker-button (mtSelection)="handleCategorySelection($event)"
+                          [mtDataToEmit]="category"
+                          [mtEmoji]="category.icon"></mt-emoji-picker-button>
+</ng-container>
