@@ -1,0 +1,181 @@
+======== Resolving module 'emoji-datasource/emoji.json' from '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/extract-emojis-from-source.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'emoji-datasource/emoji.json' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/milottit/Libraries/IonicEmojiPicker/node_modules/emoji-datasource/package.json'.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/emoji-datasource/emoji.json.ts' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/emoji-datasource/emoji.json.tsx' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/emoji-datasource/emoji.json.d.ts' does not exist.
+Directory '/home/milottit/Libraries/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'emoji-datasource/emoji.json' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/milottit/Libraries/IonicEmojiPicker/node_modules/emoji-datasource/package.json'.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/emoji-datasource/emoji.json.js' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/emoji-datasource/emoji.json.jsx' does not exist.
+Directory '/home/milottit/Libraries/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'emoji-datasource/emoji.json' was not resolved. ========
+======== Resolving module '../../../decorator/save-properties.decorator' from '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/extract-emojis-from-source.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module as file / folder, candidate module location '/home/milottit/Libraries/IonicEmojiPicker/src/decorator/save-properties.decorator', target file type 'TypeScript'.
+File '/home/milottit/Libraries/IonicEmojiPicker/src/decorator/save-properties.decorator.ts' exist - use it as a name resolution result.
+======== Module name '../../../decorator/save-properties.decorator' was successfully resolved to '/home/milottit/Libraries/IonicEmojiPicker/src/decorator/save-properties.decorator.ts'. ========
+======== Resolving module 'fs' from '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/extract-emojis-from-source.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'fs' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/node_modules' does not exist, skipping all lookups in it.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/fs.ts' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/fs.tsx' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/fs.d.ts' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/fs.d.ts' does not exist.
+Directory '/home/milottit/Libraries/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'fs' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/node_modules' does not exist, skipping all lookups in it.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/fs.js' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/fs.jsx' does not exist.
+Directory '/home/milottit/Libraries/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'fs' was not resolved. ========
+======== Resolving module 'util' from '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/extract-emojis-from-source.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'util' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util/package.json'.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util.ts' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util.tsx' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util/index.ts' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util/index.tsx' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util/index.d.ts' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/util.d.ts' does not exist.
+Directory '/home/milottit/Libraries/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'util' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/modules/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/src/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util/package.json'.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util.js' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util.jsx' does not exist.
+'package.json' has 'main' field './util.js' that references '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util/util.js'.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util/util.js' exist - use it as a name resolution result.
+Resolving real path for '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util/util.js', result '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util/util.js'.
+======== Module name 'util' was successfully resolved to '/home/milottit/Libraries/IonicEmojiPicker/node_modules/util/util.js'. ========
+======== Resolving type reference directive 'localforage', containing file '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/__inferred type names__.ts', root directory '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types'. ========
+Resolving with primary search path '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types'.
+Found 'package.json' at '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/localforage/package.json'.
+'package.json' has 'typings' field 'index.d.ts' that references '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/localforage/index.d.ts'.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/localforage/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/localforage/index.d.ts', result '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/localforage/index.d.ts'.
+======== Type reference directive 'localforage' was successfully resolved to '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/localforage/index.d.ts', primary: true. ========
+======== Resolving type reference directive 'node', containing file '/home/milottit/Libraries/IonicEmojiPicker/src/modules/emoji-pciker/data/__inferred type names__.ts', root directory '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types'. ========
+Resolving with primary search path '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types'.
+Found 'package.json' at '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/package.json'.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts', result '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts', primary: true. ========
+======== Resolving module 'events' from '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/inspector.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'events' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events/package.json'.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events.ts' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events.tsx' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events/index.ts' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events/index.tsx' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events/index.d.ts' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/events.d.ts' does not exist.
+Directory '/home/milottit/Libraries/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'events' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events/package.json'.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events.js' does not exist.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events.jsx' does not exist.
+'package.json' has 'main' field './events.js' that references '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events/events.js'.
+File '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events/events.js' exist - use it as a name resolution result.
+Resolving real path for '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events/events.js', result '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events/events.js'.
+======== Module name 'events' was successfully resolved to '/home/milottit/Libraries/IonicEmojiPicker/node_modules/events/events.js'. ========
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'net' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'stream' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'url' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'child_process' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'net' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'stream' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'tls' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'http' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'url' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'stream' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'readline' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'stream' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'stream' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'net' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'querystring' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'stream' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'dns' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'dns' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'stream' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'url' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'crypto' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'dns' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'net' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'stream' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'net' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'events' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'fs' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'net' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'stream' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'tls' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'url' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'http' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+Module 'http' was resolved as locally declared ambient module in file '/home/milottit/Libraries/IonicEmojiPicker/node_modules/@types/node/index.d.ts'.
+extract-emojis-from-source.ts(1,24): error TS2307: Cannot find module 'emoji-datasource/emoji.json'.

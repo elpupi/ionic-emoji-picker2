@@ -18,46 +18,47 @@ import { EmojiEmptyCategoryPipe } from './pipes/emoji-empty-category.pipe';
 import { EmojiPickerCaretDirective } from './directives/emoji-picker-caret.directive';
 
 const componentsToExport = [
-  EmojiPicker,
-  EmojiPickerContent,
-  EmojiPickerList,
-  EmojiPickerHeader,
-  EmojiPickerFooter,
-  EmojiPickerButton,
-  EmojiPickerIcon,
-  EmojiPickerSearch,
-  EmojiCategories,
-  EmojiCategory,
+    EmojiPicker,
+    EmojiPickerContent,
+    EmojiPickerList,
+    EmojiPickerHeader,
+    EmojiPickerFooter,
+    EmojiPickerButton,
+    EmojiPickerIcon,
+    EmojiPickerIcon,
+    EmojiPickerSearch,
+    EmojiCategories,
+    EmojiCategory,
 ];
 
 @NgModule({
-  declarations: [
-    // components
-    ...componentsToExport,
-    // directive
-    EmojiPickerCaretDirective,
-    // private pipe for this module
-    EmojiEmptyCategoryPipe
-  ],
-  imports: [
-    IonicModule,
-  ],
-  exports: [
-    ...componentsToExport,
-    // directive
-    EmojiPickerCaretDirective
-  ]
+    declarations: [
+        // components
+        ...componentsToExport,
+        // directive
+        EmojiPickerCaretDirective,
+        // private pipe for this module
+        EmojiEmptyCategoryPipe
+    ],
+    imports: [
+        IonicModule,
+    ],
+    exports: [
+        ...componentsToExport,
+        // directive
+        EmojiPickerCaretDirective
+    ]
 })
 export class EmojiPickerModule {
-  static forRoot(): ModuleWithProviders { // for lazy modules using the service of this module
+    static forRoot(): ModuleWithProviders { // for lazy modules using the service of this module
 
-    return {
-      ngModule: EmojiPickerModule,
-      providers: [
-        EmojiPickerOptions
-      ]
-    };
+        return {
+            ngModule: EmojiPickerModule,
+            providers: [
+                EmojiPickerOptions
+            ]
+        };
 
-  }
+    }
 
 }
