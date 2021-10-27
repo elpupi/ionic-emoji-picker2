@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Launch Emojis",
+            "program": "${workspaceFolder}/extract-emojis/out/emoji.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch Extract",
             "program": "${workspaceFolder}/extract-emojis/out/extract.js"
         },

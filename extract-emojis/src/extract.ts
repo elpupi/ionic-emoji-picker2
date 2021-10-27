@@ -1,112 +1,162 @@
 
-import { ExtractFromSourceOption, extractFromDataSource } from './extract/extract-emojis-from-source';
-import { EmojiExtractOption } from './extract/emoji';
-
-/* const variationPropsList: VariationDataPropertiesList = [
-    'unified',
-    'image',
-    'sheet_x',
-    'sheet_y',
-    'added_in',
-    'has_img_apple',
-    'has_img_google',
-    'has_img_twitter',
-    'has_img_emojione',
-    'has_img_facebook',
-    'has_img_messenger'
-];
+// www.js, index.js, main.js, etc
+const TSModuleAlias = require('@momothepug/tsmodule-alias');
+// Path from package.json to your tsconfig.json file
+const tsconfigToReadFromRoot = './';
+// Makes it work with play method, merging custom aliases
+const aliasRegister = TSModuleAlias.play(tsconfigToReadFromRoot);
 
 
-
-const emojiPropsList: EmojiDataPropertiesList = [
-    'name',
-    'unified',
-    'non_qualified',
-    'docomo',
-    'au',
-    'softbank',
-    'google',
-    'image',
-    'sheet_x',
-    'sheet_y',
-    'short_name',
-    'short_names',
-    'text',
-    'texts',
-    'category',
-    'sort_order',
-    'added_in',
-    'has_img_apple',
-    'has_img_google',
-    'has_img_twitter',
-    'has_img_emojione',
-    'has_img_facebook',
-    'has_img_messenger',
-    'obsoletes',
-    'obsoleted_by',
-    'skin_variations'
-]; */
-
-const extractionAll: EmojiExtractOption = {
-    all: true
-};
-
-const extractionFew_All: EmojiExtractOption = {
-    properties: {
-        name: true,
-        unified: true,
-        skin_variations: {
-            all: true
-        }
-    }
-};
+aliasRegister.addPathAlias(
+    'json-object-parser/*',
+    '../../../JsonObjectParser/src/parser/*'
+);
 
 
+aliasRegister.addPathAlias(
+    'decorator-saveprop/*',
+    '../../../Decorators/SaveProperty/src/*'
+);
 
-const extractionFew_Few: EmojiExtractOption = {
-    properties: {
-        name: true,
-        unified: true,
-        skin_variations: {
+import { SaveProp } from 'decorator-saveprop/save-properties';
+
+import { Element } from 'json-object-parser/element';
+
+import { Emoji, EmojiMembersOptionProperties, EmojiObjectOptionProperties } from './emoji';
+import { SkinVariation, SkinVariationObjectOptionProperties, SkinVariationMembersOptionProperties } from './skin-variation';
+
+import { LiteralOptionProperties } from 'json-object-parser/litral/literal-option';
+import { ArrayOptionProperties } from 'json-object-parser/array/array-option';
+
+import * as emojiSource from 'emoji-datasource/emoji.json';
+
+
+import * as fs from 'fs-extra';
+import * as path from 'path';
+
+
+function $writeJson(fileName: string, json: any[]) {
+
+    return fs.ensureFile(fileName)
+        .then(() => fs.writeJson(fileName, json).then(
+            () => fileName,
+            err => Promise.reject(err)
+        ))
+        .catch(err => Promise.reject(err));
+}
+
+
+class System {
+    @SaveProp() apple: 'apple';
+    @SaveProp() google: 'google';
+    @SaveProp() twitter: 'twitter';
+    @SaveProp() emojione: 'emojione';
+    @SaveProp() facebook: 'facebook';
+    @SaveProp() messenger: 'messenger';
+}
+
+type SystemType = keyof System;
+
+
+function getOption(system: SystemType) {
+    const listEmojisOption = {
+        mutate: (key: string, emoji: any) => {
+            if (emoji.text && emoji.texts) emoji.texts.unshift(emoji.text);
+            delete emoji.text;
+
+            emoji.has_img = emoji[`has_img_${system}`];
+            delete emoji[`has_img_${system}`];
+
+            return emoji;
+        },
+
+        object: {
+            filter: (key: string, value: any) => {
+                if (value === null)
+                    return false;
+
+                if (key.startsWith('has_img'))
+                    return key === `has_img_${system}` ? true : false;
+
+                return true;
+            },
+
             properties: {
+                name: true,
                 unified: true,
                 image: true,
-                sheet_x: true
-            }
-        }
-    }
-};
+                sheet_x: true,
+                sheet_y: true,
+                short_names: true,
+                text: true,
+                texts: true,
+                category: true,
+
+                has_img_apple: true,
+                has_img_google: true,
+                has_img_twitter: true,
+                has_img_emojione: true,
+                has_img_facebook: true,
+                has_img_messenger: true,
+
+                skin_variations: {
+                    all: true,
+                    mutate: (key: string, variation: any) => {
+                        variation.has_img = variation[`has_img_${system}`];
+                        delete variation[`has_img_${system}`];
+
+                        return variation;
+                    },
+
+                    properties: {
+                        all: true,
+
+                        filter: (key: string, value: any) => {
+                            if (value === null)
+                                return false;
+
+                            if (key.startsWith('has_img'))
+                                return key === `has_img_${system}` ? true : false;
+
+                            return key === 'added_in' ? false : true;
+                        }
+                    } as SkinVariationObjectOptionProperties
+
+                } as EmojiObjectOptionProperties
+
+            } as EmojiMembersOptionProperties
+
+        } as EmojiObjectOptionProperties
+
+    } as ArrayOptionProperties;
 
 
-const optionAll: ExtractFromSourceOption = {
-    fileName: 'emojis-all.json',
-    extraction: extractionAll
-};
 
-const optionFew_All: ExtractFromSourceOption = {
-    fileName: 'emojis_few_all.json',
-    extraction: extractionFew_All
-};
+    return listEmojisOption;
+}
 
+const jsonDir = 'json';
 
-const optionFew_Few: ExtractFromSourceOption = {
-    fileName: 'emojisfew_few.json',
-    extraction: extractionFew_Few
-};
+for (const prop of SaveProp.get(System)) {
+    const system: SystemType = prop.name as SystemType;
 
 
-extractFromDataSource(optionAll).then(
-    () => console.log(`${optionAll.fileName} done :)`),
+    const extractedJson = Element.create(emojiSource, getOption(system)).parse();
+
+
+
+    $writeJson(path.join(jsonDir, `emojis-${system}.json`), extractedJson).then(
+        fileName => console.log(`${fileName} :)`),
+        err => console.error(err)
+    );
+}
+
+/* const system: SystemType = 'apple';
+const extractedJson = Element.create(emojiSource, getOption(system)).parse();
+
+
+$writeJson(path.join(jsonDir, `emojis-${system}.json`), extractedJson).then(
+    fileName => console.log(`${fileName} :)`),
     err => console.error(err)
 );
-
-extractFromDataSource(optionFew_All).then(
-    () => console.log(`${optionFew_All.fileName} done :)`),
-    err => console.error(err)
-);
-
-
-extractFromDataSource(optionFew_Few).then(
-    () => console.log(`${optionFew_Few.fileName} done :)`),
-    err => console.error(err)
-);
+ */

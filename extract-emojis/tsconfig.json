@@ -12,11 +12,22 @@
         "sourceMap": true,
         "target": "es6",
         "traceResolution": false,
-        "outDir": "out"
+        "outDir": "out",
+        "baseUrl": ".",
+        "paths": {
+            "json-object-parser/*": [
+                "../../JsonObjectParser/src/parser/*"
+            ],
+            "decorator-saveprop/*": [
+                "../../Decorators/SaveProperty/src/*"
+            ]
+        }
     },
     "include": [
+        "js-mapping.ts",
         "src/**/*.ts",
-        "global-ts-definition/**/*.ts"
+        "global-ts-definition/**/*.ts",
+        "../../JsonObjectParser/src/parser/**/*.ts"
     ],
     "exclude": [
         "node_modules",

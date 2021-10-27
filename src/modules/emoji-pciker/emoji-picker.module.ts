@@ -12,10 +12,14 @@ import { EmojiPickerSearch } from './components/emoji-picker/emoji-picker-search
 import { EmojiCategories } from './components/emoji-categories/emoji-categories';
 import { EmojiCategory } from './components/emoji-category/emoji-category';
 
-import { EmojiPickerOptions } from './services/emoji-picker-options.service';
 import { EmojiEmptyCategoryPipe } from './pipes/emoji-empty-category.pipe';
-
 import { EmojiPickerCaretDirective } from './directives/emoji-picker-caret.directive';
+
+
+import { EmojiPickerOptions } from './services/emoji-picker-options.service';
+import { EmojisURL } from './services/emoji-url.service';
+import { EmojisRequest } from './services/emojis-request.service';
+import { Emojis } from './services/emojis.service.';
 
 const componentsToExport = [
     EmojiPicker,
@@ -29,6 +33,13 @@ const componentsToExport = [
     EmojiPickerSearch,
     EmojiCategories,
     EmojiCategory,
+];
+
+const services = [
+    EmojiPickerOptions,
+    EmojisURL,
+    EmojisRequest,
+    Emojis
 ];
 
 @NgModule({
@@ -55,7 +66,7 @@ export class EmojiPickerModule {
         return {
             ngModule: EmojiPickerModule,
             providers: [
-                EmojiPickerOptions
+                ...services
             ]
         };
 
